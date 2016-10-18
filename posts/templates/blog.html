@@ -38,8 +38,10 @@
 
 <div id="Formulario">
 
-	<form>
+	<form method="post" action=".">
+		{%csrf_token%}
 		{{form.as_p}}
+		<input class="btn btn-lg btn-info" type="submit" value="Guardar">
 	</form>
 
 </div>
